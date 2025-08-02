@@ -4,6 +4,7 @@
     --black: #1e1e2f;
     --bg: #ffe4f0;
     /* fundo claro pastel */
+    --minpink:#f9c5bd;
     --border: 0.1rem solid rgba(0, 0, 0, 0.1);
     --medblue: #c3dafe;
     font-size: 10px;
@@ -23,8 +24,10 @@
 }
 
 body {
-    background-color: var(--bg);
+    background-color: var(--minpink);
 }
+
+/* Seção HEADER  */
 
 section {
     padding: 3rem 2rem;
@@ -40,6 +43,7 @@ section {
     z-index: 99;
     background-color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-bottom: 8px solid var(--main-color);
 }
 
 .logo img {
@@ -86,6 +90,8 @@ section {
 .btn:hover {
     letter-spacing: 0.1rem;
 }
+
+/* Seção HOME */
 
 .home-container {
     background-image: url(./image/home-background.jpeg);
@@ -144,7 +150,7 @@ section {
 
 .title {
     font-size: 4rem;
-    color: var(--main-color);
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 4rem;
@@ -155,20 +161,88 @@ section {
     text-transform: uppercase;
 }
 
+/* DIVISÂO */
+
+.vertical-gif{
+    width: 100%;
+    height: 60px;
+    
+    background-image: url(./image/gif-divisor.gif);
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+
+
+/* Seção ABOUT */
+.about{
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+.about-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.icon-column{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.icon-column-left-icons img{
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    transition: transform 0.3s;
+}
+
+.icon-column-left-icons img:hover{
+    transform: scale(1.1);
+}
+
+.icon-colunm-right-icons img{
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+    transition: transform 0.3s;
+}
+
+.icon-colunm-right-icons img:hover{
+    transform: scale(1.1);
+}
+
 .about .row {
     display: flex;
     align-items: center;
-    background-color: var(--black);
-    gap: 1.5rem;
+    background-color: var(--minpink);
+    gap: 2rem;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about .row .cotainer-image{
+    flex: 1;
+    max-width: 300px;
+}
+
+.about .row .cotainer-image img{
+    width: 100%;
+    border-radius: 12px;
 }
 
 .about .row .content {
+    flex: 1;
     padding: 2rem;
-
+    color: #fff;
 }
 
 .about .row .content h3 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: #fff;
 }
 
@@ -176,80 +250,29 @@ section {
     font-size: 1.6rem;
     color: #fff;
     padding: 1rem 0;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
 }
 
-.box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+
+/* Carrosel camisas */
+
+.swiper-slide img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.menu .box-container .box {
-    text-align: center;
-    border: var(--border);
-    padding: 5rem;
-    cursor: pointer;
-
+.swiper {
+    
+    padding: 2rem;
+    border-radius: 12px;
 }
 
-.menu .box-container .box img {
-    height: 10rem;
-
-}
-
-.menu .box-container .box h3 {
-    color: #fff;
-    font-size: 2rem;
-    padding: 1rem 0;
-}
-
-.menu .box-container .box .price {
-    color: #fff;
-    font-size: 2.5rem;
-    padding: 0.5rem 0;
-}
-
-.menu .box-container .box .price span {
-    font-size: 1.5rem;
-    text-decoration: line-through;
-    font-weight: lighter;
-}
-
-.menu .box-container .box:hover {
-    background-color: #fff;
-}
-
-/* O "*" Faz com que o hover se aplique em todas as sections*/
-.menu .box-container .box:hover>* {
-    color: var(--black);
-}
-
-.review .box-container .box {
-    border: var(--border);
-    text-align: center;
-    padding: 3rem;
-}
-
-.review .box-container .box p {
-    font-size: 1.5rem;
-    color: #fff;
-    padding: 2rem 0;
-    line-height: 1.8;
-    font-weight: lighter;
-}
-
-.review .box-container .box h3 {
-    color: #fff;
-    font-size: 2rem;
-    margin: 1rem 0;
-}
-
-.review .box-container .box .user {
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-}
 
 
 
@@ -274,19 +297,3 @@ section {
     background-color: var(--main-color);
 }
 
-.swiper-slide img {
-    max-width: 100%;
-    height: auto;
-    max-height: 300px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.swiper {
-    background-color: #ffffff;
-    padding: 2rem;
-    border-radius: 12px;
-}

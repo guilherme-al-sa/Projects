@@ -8,6 +8,12 @@ const galleryData = [
  { src: './image/camisa-sabrina-1.png', alt: 'Arte 1' },
  { src: './image/camisa-sabrina-2.png', alt: 'Arte 2' },
  { src: './image/camisa-sabrina-3.png', alt: 'Arte 3' },
+ { src: './image/camisa-ken-1.png', alt: 'Arte 4'},
+ { src: './image/camisa-kat-1.png', alt: 'Arte 5' },
+ { src: './image/camisa-no-1.png', alt: 'Arte 6' },
+ { src: './image/camisa-sub-1.png', alt: 'Arte 7' },
+ 
+ 
 ];
 
 function renderGallery(images) {
@@ -30,7 +36,7 @@ function renderGallery(images) {
 
  new Swiper('.mySwiper', {
   loop: true,
-  slidePerview: 1,
+  slidesPerView: 3,
   spaceBetween: 30,
   navigation: {
    nextEl: '.swiper-button-next',
@@ -41,8 +47,8 @@ function renderGallery(images) {
    clickable: true,
   },
   breakpoints: {
-   768: { slidePerview: 2 },
-   1024: { slidePerview: 3 },
+   768: { slidesPerView: 2 },
+   1024: { slidesPerView: 3 },
   }
 
  });
