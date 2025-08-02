@@ -4,6 +4,7 @@
 //  categoria:'ilustracao'
 // });
 
+// Primeira galeria
 const galleryData = [
  { src: './image/camisa-sabrina-1.png', alt: 'Arte 1' },
  { src: './image/camisa-sabrina-2.png', alt: 'Arte 2' },
@@ -78,3 +79,51 @@ document.getElementById('lightbox').addEventListener('click', (e) => {
   document.getElementById('lightbox').classList.add('hidden');
  }
 });
+
+
+// segunda galeria
+
+const customGalleryData =[
+ {src:'./image/banner-1.png',alt: 'Custom Arte 1'},
+  {src:'./image/banner-2.png',alt: 'Custom Arte 2'},
+   {src:'./image/banner-3.png',alt: 'Custom Arte 3'},
+    {src:'./image/banner-4.png',alt: 'Custom Arte 4'},
+     {src:'./image/banner-5.jpeg',alt: 'Custom Arte 5'},
+      {src:'./image/banner-6.png',alt: 'Custom Arte 6'},
+      ];
+
+      function renderCustomGallery(images){
+       const wrapper = document.getElementById('custom-gallery-wrapper');
+       if (!wrapper) return;
+
+       wrapper.innerHTML = '';
+       images.forEach(img =>{
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide';
+        slide.innerHTML = `<img src="${img.src}" alt="${img.alt}" />`;
+        wrapper.appendChild(slide);
+       });
+
+       new Swiper('.myCustomSwiper',{
+        loop:true,
+        slidesPerView:2,
+        spaceBetween:20,
+        navigation:{
+         nextEl:'.custom-next',
+         prevEl:'.custom-prev',
+        },
+        pagination: {
+         el:'.custom-pagination',
+         clickable:true,
+        },
+        breakpoints:{
+         768:{slidesPerView:1},
+         1024:{slidesPerView:2},
+        }
+       });
+
+      }
+
+      renderCustomGallery(customGalleryData);
+
+
