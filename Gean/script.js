@@ -38,15 +38,15 @@ function renderGallery(images) {
  new Swiper('.mySwiper', {
   loop: true,
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 20,
   navigation: {
    nextEl: '.swiper-button-next',
    prevEl: '.swiper-button-prev',
   },
   pagination: {
-   el: '.swiper-pagination',
-   clickable: true,
-  },
+  el: '.swiper-pagination',
+  clickable: true,
+},
   breakpoints: {
    768: { slidesPerView: 2 },
    1024: { slidesPerView: 3 },
@@ -83,47 +83,97 @@ document.getElementById('lightbox').addEventListener('click', (e) => {
 
 // segunda galeria
 
-const customGalleryData =[
- {src:'./image/banner-1.png',alt: 'Custom Arte 1'},
-  {src:'./image/banner-2.png',alt: 'Custom Arte 2'},
-   {src:'./image/banner-3.png',alt: 'Custom Arte 3'},
-    {src:'./image/banner-4.png',alt: 'Custom Arte 4'},
-     {src:'./image/banner-5.jpeg',alt: 'Custom Arte 5'},
-      {src:'./image/banner-6.png',alt: 'Custom Arte 6'},
-      ];
+const customGalleryData = [
+ { src: './image/banner-1.png', alt: 'Custom Arte 1' },
+ { src: './image/banner-2.png', alt: 'Custom Arte 2' },
+ { src: './image/banner-3.png', alt: 'Custom Arte 3' },
+ { src: './image/banner-4.png', alt: 'Custom Arte 4' },
+ { src: './image/banner-5.jpeg', alt: 'Custom Arte 5' },
+ { src: './image/banner-6.png', alt: 'Custom Arte 6' },
+];
 
-      function renderCustomGallery(images){
-       const wrapper = document.getElementById('custom-gallery-wrapper');
-       if (!wrapper) return;
+function renderCustomGallery(images) {
+ const wrapper = document.getElementById('custom-gallery-wrapper');
+ if (!wrapper) return;
 
-       wrapper.innerHTML = '';
-       images.forEach(img =>{
-        const slide = document.createElement('div');
-        slide.className = 'swiper-slide';
-        slide.innerHTML = `<img src="${img.src}" alt="${img.alt}" />`;
-        wrapper.appendChild(slide);
-       });
+ wrapper.innerHTML = '';
+ images.forEach(img => {
+  const slide = document.createElement('div');
+  slide.className = 'swiper-slide';
+  slide.innerHTML = `<img src="${img.src}" alt="${img.alt}" />`;
+  wrapper.appendChild(slide);
+ });
 
-       new Swiper('.myCustomSwiper',{
-        loop:true,
-        slidesPerView:2,
-        spaceBetween:20,
-        navigation:{
-         nextEl:'.custom-next',
-         prevEl:'.custom-prev',
-        },
-        pagination: {
-         el:'.custom-pagination',
-         clickable:true,
-        },
-        breakpoints:{
-         768:{slidesPerView:1},
-         1024:{slidesPerView:2},
-        }
-       });
+ new Swiper('.myCustomSwiper', {
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 20,
+  navigation: {
+   nextEl: '.custom-next',
+   prevEl: '.custom-prev',
+  },
+  pagination: {
+   el: '.custom-pagination',
+   clickable: true,
+  },
+  breakpoints: {
+   768: { slidesPerView: 1 },
+   1024: { slidesPerView: 2 },
+  }
+ });
 
-      }
+}
 
-      renderCustomGallery(customGalleryData);
+renderCustomGallery(customGalleryData);
 
 
+// Terceiro carrosel
+
+ const worksGalleryData =[
+  {src:'./image/work-1.jpeg',alt:'Trabalho 1'},
+  {src:'./image/work-2.jpeg',alt:'Trabalho 2'},
+  {src:'./image/work-3.jpeg',alt:'Trabalho 3'},
+  {src:'./image/work-4.jpeg',alt:'Trabalho 4'},
+  {src:'./image/work-5.jpeg',alt:'Trabalho 5'},
+  {src:'./image/work-6.jpeg',alt:'Trabalho 6'},
+  {src:'./image/work-7.jpeg',alt:'Trabalho 7'},
+  {src:'./image/work-8.jpeg',alt:'Trabalho 8'},
+  {src:'./image/work-9.jpeg',alt:'Trabalho 9'},
+  {src:'./image/work-10.jpeg',alt:'Trabalho 10'},
+  {src:'./image/work-11.jpeg',alt:'Trabalho 11'},
+ ];
+
+ function renderWorksGallery(images){
+  const wrapper = document.getElementById('works-gallery-wrapper');
+  if (!wrapper) return;
+
+  wrapper.innerHTML = '';
+  images.forEach(img =>{
+   const slide = document.createElement('div');
+   slide.className = 'swiper-slide';
+   slide.innerHTML = `<img src="${img.src}" alt= "${img.alt}" />`;
+   wrapper.appendChild(slide);
+  });
+
+  new Swiper('.myWorksSwiper',{
+   loop:true,
+   slidesPerView:2,
+   spaceBetween: 30,
+   navigation:{
+    nextEl:'.works-next',
+    prevEl:'.works-prev',
+   },
+   pagination:{
+    el: '.works-pagination',
+    clickable: true,
+   },
+   breakpoints:{
+    768:{slidesPerView:1},
+    1024:{slidesPerView:2},
+   }
+  });
+ }
+
+ renderWorksGallery(worksGalleryData);
+
+ 
