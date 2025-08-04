@@ -176,4 +176,30 @@ renderCustomGallery(customGalleryData);
 
  renderWorksGallery(worksGalleryData);
 
- 
+//  criando tabela de precos
+
+const commissions=[
+  {tipo:"headshot / pfp", preco:"$20"},
+  {tipo:"halfbody", preco:"$35"},
+  {tipo:"fullbody", preco:"$50"},
+  {tipo:"chibi", preco:"$15"},
+  {tipo:"background", preco:"$5"},
+  {tipo:"extras", preco:"+$5"},
+  {tipo:"extras deluxe", preco:"+$15"},
+];
+
+function renderTableComissoes(){
+  const tbody = document.getElementById("commission-table-body");
+  tbody.innerHTML = "";
+
+  commissions.forEach(item =>{
+    const row= document.createElement("tr");
+  row.innerHTML = `
+    <td>${item.tipo}</td>
+    <td>${item.preco}</td>
+  `;
+  tbody.appendChild(row);
+  });
+}
+
+renderTableComissoes();
