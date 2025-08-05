@@ -117,15 +117,25 @@ const pomodoroButtons = document.querySelectorAll('.pomodoro-btn');
       timerDisplay.textContent = `${String(min).padStart(2, '0')}:${String(sec).padStart(2,0)}`;
     }
 
+    // Alertas pra quando o timer acabar
+
     function mostrarAlertaVisual(){
       const container = document.querySelector('.pomodoro-container');
       container.classList.add('alerta-final');
+
+
+      const alarm = document.getElementById('alarm-sound');
+      alarm.currentTime = 0;
+      alarm.play();
+
 
       setTimeout(()=>{
         container.classList.remove('alerta-final');
       },5000);
     }
 
+    // iniciar timer
+    
     function startTimer(){
       if(countdown || isPaused) return;
 
