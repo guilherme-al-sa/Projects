@@ -96,3 +96,87 @@ function manterList() {
 button.addEventListener('click', addNewTask)
 
 manterList()
+
+// logica do timer
+
+let countdown;
+let remainingTime = 1500;
+let originalTime = 1500;
+let isPaused = false;
+
+
+const timerDisplay = document.querySelector('.timer-display');
+const startButton = document.querySelector('.start-timer-btn');
+const pauseButton = document.querySelector('.pause-timer-btn');
+const resetButton = document.querySelector('.reset-timer-btn');
+const pomodoroButtons = document.querySelectorAll('.pomodoro-btn');
+
+    function updateDisplay(seconds){
+      const min = Math.floor(seconds / 60);
+      const sec = seconds % 60;
+      timerDisplay.textContent = `${String(min).padStart(2, '0')}:${String(sec).padStart(2,0)}`;
+    }
+
+    function mostrarAlertaVisual(){
+      const container = document.querySelector('.pomodoro-container');
+      container.classList.add('alerta-final');
+
+      setTimeout(()=>{
+        container.classList.remove('alerta-final');
+      },5000);
+    }
+
+    function startTimer(){
+      if(countdown || isPaused) return;
+
+      let timeLeft = remainingTime;
+
+      countdown =  setInterval(()=>{
+        if (!isPaused){
+          timeLeft--;
+          remainingTime = timeLeft;
+          updateDisplay(timeLeft);
+
+          if(timeLeft<= 0){
+            clearInterval(countdown);
+            countdown = null;
+            mostrarAlertaVisual();
+          }
+        }
+      },1000);
+    }
+
+    function pauseTimer(){
+      isPaused = !isPaused;
+      pauseButton.textContent = isPaused ? "Continuar" : "Pausar";
+    }
+
+    function resetTimer(){
+      clearInterval(countdown);
+      countdown = null;
+      isPaused = false;
+      pauseButton.textContent = "Pausar";
+      remainingTime = originalTime;
+      updateDisplay(remainingTime);
+    }
+
+
+    pomodoroButtons.forEach(btn =>{
+      btn.addEventListener('click',()=>{
+        clearInterval(countdown);
+        countdown = null;
+        isPaused = false;
+        pauseButton.textContent = "Pausar"
+        originalTime = parseInt(btn.getAttribute('data-time'));
+        remainingTime = originalTime;
+        updateDisplay(remainingTime);
+      });
+    });
+
+    startButton.addEventListener('click',startTimer);
+    pauseButton.addEventListener('click', pauseTimer);
+    resetButton.addEventListener('click', resetTimer);
+
+
+    // inicar sempre com 25
+    updateDisplay(remainingTime);
