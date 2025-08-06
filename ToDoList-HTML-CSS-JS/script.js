@@ -1,13 +1,23 @@
+// Selecionando o botão de adicionar tarefas, o campo de texto, e a lista onde as tarefas
+// serão exibidas
+
 const button = document.querySelector('.button-add-task')
 const input = document.querySelector('.input-task')
 const completeList = document.querySelector('.list-task')
 
+
+
 let myListItens = []
+// Array que guarda as tarefas criada como objeto
+// "tarefa" texto escrito
+// "concluida" um booleano se a tarefa esta feia ou nao
 
 function addNewTask() {
 
   const task = input.value.trim()
   const errorMsg = document.querySelector('.msg-erro')
+// Pegando o texto do input e tirando os espaços extras com o trim
+// Se estiver vazio e exibe uma mensagem de erro e retorna sem adicionar
 
   if (task === '') {
 
@@ -20,6 +30,7 @@ function addNewTask() {
     
     return;
   }
+// Se for valido vai ser adicionado no array
 
   errorMsg.textContent = ''
   errorMsg.classList.remove('visible')
@@ -33,6 +44,9 @@ function addNewTask() {
 
   showTask()
 }
+
+// Monta o HTML de cada tarefa
+// Marcar como 'done' se a tarefa  estiver concluida
 
 function showTask() {
 
@@ -55,21 +69,28 @@ function showTask() {
 
   completeList.innerHTML = newLi
 
+  // Salva tudo no 'local storage' para manter os dados mesmo se a pagina for recarregada
   localStorage.setItem('lista', JSON.stringify(myListItens))   /*tranformar meu objeto em string*/
 }
 
+
+// Alterna o estado  da tarefa para true ou false
+// atualiza a tela
 function completeTask(position) {
   myListItens[position].concluida = !myListItens[position].concluida
   showTask()
 }
 
+
+// Remove a tarefa da lista com base na posição
+// atualiza a tela
 function deleteItem(position) {
 
   myListItens.splice(position, 1)
   showTask()
 }
 
-
+// expondo as funções para poderem ser usada no onclik do html dinamicamente
 window.completeTask = function (position) {
   myListItens[position].concluida = !myListItens[position].concluida
   showTask()
@@ -80,6 +101,9 @@ window.deleteItem = function (position) {
   showTask()
 }
 
+
+// ao carregar a pagina  usa os dados ja salvos no 'local storage'
+// se existir dados  converte de volta para array
 function manterList() {
   const taskLocalStorage = localStorage.getItem('lista')
 
@@ -93,6 +117,8 @@ function manterList() {
 
 }
 
+// quando o botão é clicado chama o addNewTask
+// quando a pagina abre o 'manter list' carrega as tarefas
 button.addEventListener('click', addNewTask)
 
 manterList()
