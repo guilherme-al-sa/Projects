@@ -130,7 +130,7 @@ renderCustomGallery(customGalleryData);
 // Terceiro carrosel
 
  const worksGalleryData =[
-  {src:'./image/work-1.jpeg',alt:'Trabalho 1'},
+  
   {src:'./image/work-2.jpeg',alt:'Trabalho 2'},
   {src:'./image/work-3.jpeg',alt:'Trabalho 3'},
   {src:'./image/work-4.jpeg',alt:'Trabalho 4'},
