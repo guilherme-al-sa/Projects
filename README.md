@@ -29,7 +29,6 @@ Formado em Análise e Desenvolvimento de Sistemas pela **SPTech**
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60" height="60" alt="JavaScript" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="60" height="60" alt="TypeScript" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="60" height="60" alt="React" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/styledcomponents/styledcomponents-plain.svg" width="60" height="60" alt="Styled Components" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="60" height="60" alt="Git" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="60" height="60" alt="Figma" />
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="60" height="60" alt="VSCode" />
@@ -46,7 +45,7 @@ Formado em Análise e Desenvolvimento de Sistemas pela **SPTech**
   <h3>Portfólio de Ilustrações</h3>
   <p>Site dinâmico com carrossel, design responsivo e foco visual em tons pastéis.</p>
   <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
-  <a href="https://sayamity.netlify.app/" target="_blank"> Ver Repositório</a>
+  <a href="https://sayamity.netlify.app/" target="_blank"> Ver Projeto</a>
 </td>
 <td align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60" />
@@ -67,6 +66,7 @@ Formado em Análise e Desenvolvimento de Sistemas pela **SPTech**
 ##  Contato
 
 📧 **E-mail:** [guilhermeswsw@gmail.com](mailto:guilhermeswsw@gmail.com)  
+📱 **WhatsApp:** [Clique aqui para conversar comigo!](https://wa.me/5511953872849)
 💼 **LinkedIn:** [linkedin.com/in/guilherme-barros-6a2978212](https://www.linkedin.com/in/guilherme-barros-6a2978212/)  
 💻 **GitHub:** [github.com/guilherme-al-sa](https://github.com/guilherme-al-sa)
 
