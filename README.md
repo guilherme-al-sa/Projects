@@ -9,7 +9,7 @@
 
 ---
 
-## 🧠 Sobre mim
+##  Sobre mim
 
 Sou **Desenvolvedor Front-End Júnior**, com experiência em suporte e análise de sistemas, atualmente focado em **JavaScript**, **React** e **TypeScript**.  
 Busco oportunidades para aplicar meus conhecimentos em **projetos reais**, colaborando em equipes ágeis e entregando **interfaces intuitivas e performáticas**.
@@ -24,16 +24,15 @@ Formado em Análise e Desenvolvimento de Sistemas pela **SPTech**
 ## Tecnologias e Ferramentas
 
 <div align="center">
-
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-61DBFB?style=for-the-badge&logo=react&logoColor=black)
-![Styled Components](https://img.shields.io/badge/Styled--Components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
-![Figma]
-![VSCode]
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60" height="60" alt="HTML5" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="60" height="60" alt="CSS3" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60" height="60" alt="JavaScript" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="60" height="60" alt="TypeScript" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="60" height="60" alt="React" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/styledcomponents/styledcomponents-plain.svg" width="60" height="60" alt="Styled Components" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="60" height="60" alt="Git" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="60" height="60" alt="Figma" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="60" height="60" alt="VSCode" />
 </div>
 
 ---
@@ -43,26 +42,20 @@ Formado em Análise e Desenvolvimento de Sistemas pela **SPTech**
 <table>
 <tr>
 <td align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="60" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60" />
   <h3>Portfólio de Ilustrações</h3>
   <p>Site dinâmico com carrossel, design responsivo e foco visual em tons pastéis.</p>
   <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
-  <a href="https://github.com/guilherme-al-sa/Projects" target="_blank">🔗 Ver Repositório</a>
+  <a href="https://sayamity.netlify.app/" target="_blank"> Ver Repositório</a>
 </td>
 <td align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="60" />
-  <h3>Landing Page Responsiva</h3>
+  <h3>Organizador de Tarefas</h3>
   <p>Layout moderno, otimizado e totalmente responsivo.</p>
-  <p><strong>Tecnologias:</strong> HTML, CSS</p>
-  <a href="https://github.com/guilherme-al-sa/Projects/tree/main/landing-page" target="_blank">🔗 Ver Projeto</a>
+  <p><strong>Tecnologias:</strong> HTML, CSS,JS</p>
+  <a href="https://tarefas-al-todo.netlify.app/" target="_blank"> Ver Projeto</a>
 </td>
-<td align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="60" />
-  <h3>Dashboard React</h3>
-  <p>Painel de controle com componentes reutilizáveis e dados dinâmicos via API.</p>
-  <p><strong>Tecnologias:</strong> React, CSS, API REST</p>
-  <a href="https://github.com/guilherme-al-sa/Projects/tree/main/dashboard" target="_blank">🔗 Ver Projeto</a>
-</td>
+
 </tr>
 </table>
 
