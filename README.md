@@ -1,10 +1,10 @@
 <!-- Banner -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:89f7fe,100:66a6ff&height=180&section=header&text=Guilherme%20Barros%20🚀&fontSize=35&fontColor=fff&animation=fadeIn&fontAlignY=35"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:89f7fe,100:66a6ff&height=180&section=header&text=Guilherme%20Barros%20&fontSize=35&fontColor=fff&animation=fadeIn&fontAlignY=35"/>
 </p>
 
 <p align="center">
-  <em>💻 Desenvolvedor Front-End Júnior | Criando interfaces modernas, acessíveis e responsivas</em>
+  <em> Desenvolvedor Front-End Júnior | Criando interfaces modernas, acessíveis e responsivas</em>
 </p>
 
 ---
@@ -14,14 +14,14 @@
 Sou **Desenvolvedor Front-End Júnior**, com experiência em suporte e análise de sistemas, atualmente focado em **JavaScript**, **React** e **TypeScript**.  
 Busco oportunidades para aplicar meus conhecimentos em **projetos reais**, colaborando em equipes ágeis e entregando **interfaces intuitivas e performáticas**.
 
-🎯 **Objetivo:** Atuar como Desenvolvedor Front-End, contribuindo com soluções criativas e eficazes para o usuário final.
+ **Objetivo:** Atuar como Desenvolvedor Front-End, contribuindo com soluções criativas e eficazes para o usuário final.
 
-📍 São Paulo - SP  
-📚 Formado em Análise e Desenvolvimento de Sistemas pela **SPTech**  
+ São Paulo - SP  
+Formado em Análise e Desenvolvimento de Sistemas pela **SPTech**  
 
 ---
 
-## 🚀 Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 
 <div align="center">
 
@@ -32,14 +32,13 @@ Busco oportunidades para aplicar meus conhecimentos em **projetos reais**, colab
 ![React](https://img.shields.io/badge/React-61DBFB?style=for-the-badge&logo=react&logoColor=black)
 ![Styled Components](https://img.shields.io/badge/Styled--Components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![VSCode](https://img.shields.io/badge/VS%20Code-0078d7?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
+![Figma]
+![VSCode]
 </div>
 
 ---
 
-## 🧩 Projetos em Destaque
+##  Projetos em Destaque
 
 <table>
 <tr>
@@ -69,18 +68,10 @@ Busco oportunidades para aplicar meus conhecimentos em **projetos reais**, colab
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-![Guilherme's GitHub stats](https://github-readme-stats.vercel.app/api?username=guilherme-al-sa&show_icons=true&theme=tokyonight&hide_border=true)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=guilherme-al-sa&layout=compact&theme=tokyonight&hide_border=true)
-
-</div>
 
 ---
 
-## 📫 Contato
+##  Contato
 
 📧 **E-mail:** [guilhermeswsw@gmail.com](mailto:guilhermeswsw@gmail.com)  
 💼 **LinkedIn:** [linkedin.com/in/guilherme-barros-6a2978212](https://www.linkedin.com/in/guilherme-barros-6a2978212/)  
